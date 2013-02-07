@@ -16,12 +16,19 @@ JMeter Extensions
 
 #####Java interface
 `me.schiz.engine.WeightedSetSingleton.instance.putObject(String name, Object o, int w)` put object `o` into set `name` with weight `w`
+
 `me.schiz.engine.WeightedSetSingleton.instance.getObject(String name)` get object from set `name`
+
 `me.schiz.engine.WeightedSetSingleton.instance.popObject(String name)` pop object from set `name`
+
 `me.schiz.engine.WeightedSetSingleton.instance.clear(String name)`clear set `name`
+
 `me.schiz.engine.WeightedSetSingleton.instance.clearAll()`clear all sets
+
 `me.schiz.engine.WeightedSetSingleton.instance.put(String name, String o, int w)` put string `i` into set `name` with weight `w`
+
 `me.schiz.engine.WeightedSetSingleton.instance.get(String name)` get String from set `name`
+
 `me.schiz.engine.WeightedSetSingleton.instance.pop(String name)` pop String from set `name`
 
 
