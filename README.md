@@ -3,16 +3,21 @@ jmext
 
 JMeter Extensions
 
+####WeightedSet
+
+####JMeter interface
+`{_wsPut(set_name, object, weight)}` Put `object` with `weight` into weighted set `set_name`.
+`{_wsPut(set_name)}` Get `object` from weighted set `set_name`.
+`{_wsPop(set_name)}` Pop `object` from weighted set `set_name`.
+`{_wsClear(set_name)}` Clear weighted set `set_name`.
 
 ####ABQ (ArrayBlockingQueue)
 
 #####JMeter interface
 
-`${__ABQCreate(queue_name, capacity, fair_ordering)}` Create BlockingQueue with capacity (integer value) and fair ordering (optional, default is false). Fair ordering make context switch when you use Put / Take methods
-
-`${__ABQPut(queue_name, object)}` Put string-object into blocking queue `queue_name`
-
-`${__ABQTake(queue_name)}` Take string-object from blocking queue `queue_name`
+`${__ABQCreate(queue_name, capacity, fair_ordering)}` Create BlockingQueue with capacity (integer value) and fair ordering (optional, default is false). Fair ordering make context switch when you use Put / Take methods.
+`${__ABQPut(queue_name, object)}` Put string-object into blocking queue `queue_name`.
+`${__ABQTake(queue_name)}` Take string-object from blocking queue `queue_name`.
 
 #####Java interface
 
